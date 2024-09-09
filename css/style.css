@@ -1,0 +1,244 @@
+:root {
+    --clr-light: #efefef;
+    --clr-timberwolf: rgb(218, 215, 205);
+    --clr-sage: rgb(163, 177, 138);
+    --clr-fern-green: rgb(88, 129, 87);
+    --clr-hunter-green: rgb(58, 90, 64);
+    --clr-brunswick-green: rgb(52, 78, 65);
+    --padding: 5em;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    background-color: var(--clr-fern-green);
+    padding: 1em 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: var(--clr-brunswick-green);
+    margin-top: 5em;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: var(--clr-light);
+    background-color: var(--clr-fern-green);
+    padding: .8em 1.5em;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 200ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--clr-hunter-green);
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    margin: .6em auto 0;
+}
+
+.nav {
+    text-align: center;
+    visibility: hidden;
+    height: 0;
+
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+}
+
+.nav__item {
+    margin-top: 1em;
+}
+
+.nav__link {
+    color: var(--clr-light);
+    font-weight: bold;
+}
+
+.nav__link,
+.footer-nav__link {
+    text-transform: uppercase;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    opacity: 75%;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    padding: 0;
+    color: var(--clr-light);
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+    opacity: 75%;
+}
+
+.hamburger {
+    width: 60%;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    background: var(--clr-light);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+}
+
+.hamburger::before {
+    transform: translateY(-7px);
+}
+
+.hamburger::after {
+    transform: translateY(4px);
+}
+
+.hero-image__container {
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/hund_kram.webp);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: var(--padding);
+}
+
+.btn-hero {
+    margin-bottom: 3em;
+}
+
+.main__heading {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.mini-features {
+    margin-bottom: 4em;
+}
+
+.mini-feature__container {
+    text-align: center;
+}
+
+.mini-feature__container + .mini-feature__container {
+    margin-top: 2em;
+}
+
+.mini-feature__icon {
+    margin-bottom: 1em;
+}
+
+.main-features + .main-features {
+    margin-top: 4em;
+}
+
+.main-feature__heading {
+    margin-bottom: .3em;
+}
+
+.main-feature__paragraph,
+.main-feature__image {
+    margin-bottom: 1em;
+}
+
+.btn-main-feature {
+    margin-bottom: 5em;
+}
+
+.social-media__container {
+    margin-bottom: 2em;
+}
+
+.social-media__list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    margin-bottom: 1em;
+}
+
+.footer-nav__list {
+    display: flex;
+    justify-content: center
+}
+
+.social-media__item + .social-media__item,
+.footer-nav__item + .footer-nav__item {
+    margin-left: 1.8em;
+}
+
+.footer__link,
+.footer-copy__text {
+    color: var(--clr-sage);
+    transition: all 100ms ease-in;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+    opacity: .75;
+}
+
+.footer-copy__text {
+    font-size: .8em;
+}
