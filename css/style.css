@@ -193,12 +193,17 @@ footer {
 }
 
 .main-feature__heading {
+    font-size: 1.8em;
     margin-bottom: .3em;
 }
 
 .main-feature__paragraph,
 .main-feature__image {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+.main-feature__cta {
+    text-align: center;
 }
 
 .btn-main-feature {
