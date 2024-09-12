@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vandring i Dalarna - hitta vandringsleder i natursköna områden.">
-	<meta name="keywords" content="vandring, dalarna, vandringsleder, boende, friluftsliv, fjällen, vandringstips">
+    <meta name="description" content="Hitta din nya favorit-vandringsled i Dalarna. Här finns leder för både nybörjare och mer erfarna vandrare.">
+	<meta name="keywords" content="vandring, dalarna, vandringsleder, friluftsliv, fjällen, vandringstips">
     <title>Vandringsleder - Vandring i Dalarna</title>
     <script src="https://kit.fontawesome.com/66c0ec6a62.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vandring.css">
 </head>
 <body>
     <header>
@@ -38,48 +39,77 @@
             <a href="#firstSection" class="btn btn-hero"><i class="fa-solid fa-chevron-down fa-xl"></i></a>
         </div>
         <div id="firstSection" class="container">
-            <h1 class="main__heading">Upplev de svenska fjällen i sommar</h1>
-            <section class="mini-features">
-                <div class="mini-feature__container">
-                    <i class="mini-feature__icon fa-solid fa-wand-magic-sparkles fa-lg"></i>
-                    <h3>Enkelt</h3>
-                    <p>Sök efter leder baserat på tillgänglighet, längd & svårighetsgrad. Spara dina favoritleder för att kunna dela med dina vänner!</p>
-                </div>
-                <div class="mini-feature__container">
-                    <i class="mini-feature__icon fa-solid fa-money-bill-wave fa-lg"></i>
-                    <h3 class="mini-feature__heading">Prisvärt</h3>
-                    <p>Jämför boenden och paket för att hitta det som passar din resa bäst. Inga dolda avgifter, du vet alltid vad du betalar för!</p>
-                </div>
-                <div class="mini-feature__container">
-                    <i class="mini-feature__icon fa-solid fa-star fa-lg"></i>
-                    <h3>Högst betyg</h3>
-                    <p>Med fokus på kvalité och kundservice så är det inte konstigt att vi rankas i topp på TrustAviator!</p>
+            <nav class="secondary__nav">
+                <ul class="secondary__nav__list">
+                    <li class="secondary__nav__item"><a href="#easy" class="secondary__nav__link">Enkel vandring</a></li>
+                    <li class="secondary__nav__item"><a href="#medium" class="secondary__nav__link">Medelsvår vandring</a></li>
+                    <li class="secondary__nav__item"><a href="#hard" class="secondary__nav__link">Svår vandring</a></li>
+                </ul>
+            </nav>
+
+            <section class="hiking">
+                <h1 class="main__heading">Vandringsleder för alla</h1>
+                <div class="introduction__container">
+                    <div class="introduction__text">
+                        <p class="introduction__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id, optio debitis nobis facere ipsam quos unde facilis delectus, suscipit dolore a vero ad modi quia ratione eius tempora provident!</p>
+                        <p class="introduction__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ullam quod? Eaque modi iusto blanditiis.</p>
+                        <p class="introduction__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, ullam quod? Eaque modi iusto blanditiis.</p>
+                    </div>
+                    <div class="introduction__image">
+                        <img src="images/tent_dalarna.webp" alt="ett uppslaget tält i fjällandskap">
+                    </div>
                 </div>
             </section>
-            <section class="main-features">
-                <div class="main-feature__container">
-                    <div class="main-feature__text">
-                        <h2 class="main-feature__heading">Boende</h2>
-                        <p class="main-feature__paragraph">Vi erbjuder ett brett utbud av boenden för din vandringsresa, från bekväma lägenheter till charmiga stugor. Våra lägenheter är fullt utrustade med moderna bekvämligheter och passar dig som vill ha lite extra komfort efter en dag ute i naturen. För dig som söker en mer rustik upplevelse är våra stugor perfekta, belägna i natursköna områden. Oavsett vilket boende du väljer, kan du räkna med hög standard och närhet till vackra vandringsleder.</p>
-                        <div class="main-feature__btn__container">
-                            <a href="#" class="btn btn-main-feature">Boka boende</a>
-                        </div>
+            
+            <section id="easy" class="hiking">
+                <h2>Enkla vandringsleder</h2>
+                <p class="hiking_difficulty__paragraph">Kortare turer med god tillgänglighet som passar nybörjare.</p>
+                <div class="hiking__container">
+                    <div class="hiking__image">
+                        <img src="images/male_hiker_horizontal.webp" alt="en man på vandring i fjällandskap">
                     </div>
-                    <div class="main-feature__image">
-                        <img src="images/stuga.webp" alt="vardagsrum i en stuga">
+                    <div class="hiking__text">
+                        <h3 class="hiking__heading">Trollrundan</h3>
+                        <p class="hiking__details">Distans: 4.2km - Stigning: 200m - Tidsåtgång: 2t</p>
+                        <p class="hiking__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis ipsum rem aperiam quisquam similique animi saepe quis soluta libero repellendus!</p>
                     </div>
                 </div>
-                    
-                <div class="main-feature__container">
-                    <div class="main-feature__text main-feature__text__order">
-                        <h2 class="main-feature__heading">Vandring</h2>
-                        <p class="main-feature__paragraph">Runt våra boenden finner du vandringsleder som slingrar sig genom några av de mest natursköna områdena. Lederna erbjuder en varierad terräng, från skogar och fjäll till sjöar och öppna landskap, vilket ger både nybörjare och erfarna vandrare något att upptäcka. Varje led är noggrant markerad och lättillgänglig från våra boenden, vilket gör det enkelt att ge sig ut på äventyr och njuta av den storslagna naturen i din egen takt.</p>
-                        <div class="main-feature__btn__container">
-                            <a href="vandring.html" class="btn btn-main-feature">Vandringstips</a>
-                        </div>
+                <div class="hiking__container">
+                    <div class="hiking__image">
+                        <img src="images/hund_fjallet.webp" alt="en hund står på en stan i fjällandskap">
                     </div>
-                    <div class="main-feature__image">
-                        <img src="images/hund_kram.webp" alt="HEJ">
+                    <div class="hiking__text">
+                        <h3 class="hiking__heading">Hundfjället</h3>
+                        <p class="hiking__details">Distans: 6.7km - Stigning: 300m - Tidsåtgång: 3t</p>
+                        <p class="hiking__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis error vitae culpa rem quidem fuga ad ratione hic, deleniti, maiores tempore laborum placeat deserunt, consequuntur quo!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="medium" class="hiking">
+                <h2>Medelsvåra vandringsleder</h2>
+                <p class="hiking_difficulty__paragraph">Medellånga turer med varierande kupering. God kondition och kaffe är till din fördel.</p>
+                <div class="hiking__container">
+                    <div class="hiking__image">
+                        <img src="images/hund_fjallet_2.webp" alt="en hund sitter i fjällandskap">
+                    </div>
+                    <div class="hiking__text">
+                        <h3 class="hiking__heading">Storfallet runt</h3>
+                        <p class="hiking__details">Distans: 6.9km - Stigning: 450m - Tidsåtgång: 4t30m</p>
+                        <p class="hiking__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptatibus reiciendis maiores harum, rem, pariatur in impedit natus recusandae unde, vitae dignissimos hic error laborum eveniet! Eaque pariatur voluptates ut?</p>
+                    </div>
+                </div>
+            </section>
+            <section id="hard" class="hiking">
+                <h2>Svåra vandringsleder</h2>
+                <p class="hiking_difficulty__paragraph">Långa och fysiskt krävande turer. Goda förkunskaper är ett måste.</p>
+                <div class="hiking__container">
+                    <div class="hiking__image">
+                        <img src="images/view_of_dalarna_dusk.webp" alt="vy över fjällandskap i skymning">
+                    </div>
+                    <div class="hiking__text">
+                        <h3 class="hiking__heading">Renfjället</h3>
+                        <p class="hiking__details">Distans: 14km - Stigning: 600m - Tidsåtgång: 5t</p>
+                        <p class="hiking__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quae, ex porro eligendi earum quibusdam a fuga cupiditate fugiat beatae nihil est quam possimus sapiente laboriosam ad iusto, dolorem eum esse voluptatem.</p>
                     </div>
                 </div>
             </section>
@@ -97,8 +127,8 @@
             </div>
             <nav class="footer-nav">
                 <ul class="footer-nav__list">
-                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Hem</a></li>
-                    <li class="footer-nav__item"><a href="vandring.html" class="footer-nav__link footer__link">Vandring</a></li>
+                    <li class="footer-nav__item"><a href="index.html" class="footer-nav__link footer__link">Hem</a></li>
+                    <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Vandring</a></li>
                     <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Boende</a></li>
                     <li class="footer-nav__item"><a href="#" class="footer-nav__link footer__link">Kontakt</a></li>
                 </ul>

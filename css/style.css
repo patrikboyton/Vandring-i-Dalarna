@@ -164,7 +164,7 @@ footer {
 
 /* Styles related to the hero image */
 .hero-image__container {
-    min-height: 55vh;
+    min-height: 65vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -203,6 +203,11 @@ footer {
 
 .mini-feature__icon {
     margin-bottom: 1em;
+}
+
+.main-feature__container {
+    background-color: var(--clr-timberwolf);
+    padding: 2em 3em;
 }
 
 .main-features + .main-features {
@@ -298,7 +303,7 @@ footer {
     
     .mini-features {
         display: grid;
-        gap: 1em;
+        gap: 2em;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -309,7 +314,7 @@ footer {
     .main-feature__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2em;
+        gap: 3em;
     }
 
     .main-feature__text {

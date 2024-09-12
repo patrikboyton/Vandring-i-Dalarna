@@ -1,0 +1,73 @@
+
+
+.secondary__nav {
+  margin-bottom: 2em;
+}
+
+.secondary__nav__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.secondary__nav__link {
+  color: black;
+}
+
+.secondary__nav__link:hover,
+.secondary__nav__link:focus {
+  color: red;
+}
+
+.introduction__paragraph {
+  margin-bottom: 1em;
+}
+
+.introduction__image {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hiking h2,
+.hiking_difficulty__paragraph {
+  text-align: center;
+}
+
+.hiking_difficulty__paragraph {
+  margin-bottom: 2em;
+}
+
+.hiking__container {
+  background-color: rgb(172, 196, 163);
+  padding: 2em 3em;
+  margin-bottom: 2em;
+}
+
+.introduction__container:last-of-type,
+.hiking__container:last-of-type {
+  margin-bottom: 5em;
+}
+
+.hiking__details {
+  font-size: .7rem;
+  margin-bottom: 1em;
+}
+
+.hiking__paragraph {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 980px) {
+  .introduction__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+
+  .hiking__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+  }
+}
