@@ -24,7 +24,7 @@
                     <li class="nav__item"><a href="vandring.html" class="nav__link">Vandringar</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Boende</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
-                    <li class="nav__item nav__item--account"><a href="#" class="nav__link">Mitt konto</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--account">Mitt konto</a></li>
                 </ul>
             </nav>
             <button class="nav-toggle">
@@ -34,7 +34,8 @@
     </header>
 
     <main>
-        <div class="hero-image__container">
+        <!-- Eftersom bakgrundsbilden nedanför laddas in via CSS så kan ett alt-atr ej användas, istället anger jag rollen 'img' med en beskrivning av bilden i aria-label -->
+        <div class="hero-image__container" role="img" aria-label="bakgrundsbild föreställandes en vy med fjällandskap över trädtopparna">
             <a href="#firstSection" class="btn btn-hero"><i class="fa-solid fa-chevron-down fa-xl"></i></a>
         </div>
         <div id="firstSection" class="container">

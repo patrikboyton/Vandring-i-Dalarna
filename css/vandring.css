@@ -1,7 +1,7 @@
 
 
 .secondary__nav {
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .secondary__nav__list {
@@ -13,20 +13,29 @@
 
 .secondary__nav__link {
   color: black;
+  font-size: 1.2rem;
+  transition:  100ms ease-in;
 }
 
 .secondary__nav__link:hover,
 .secondary__nav__link:focus {
-  color: red;
+  color: rgb(46, 69, 58);
+  border-bottom: 1px solid rgb(46, 69, 58);
 }
 
 .introduction__paragraph {
   margin-bottom: 1em;
 }
 
-.introduction__image {
+/*.introduction__image {
   max-height: 300px;
   overflow: hidden;
+}*/ 
+
+.hiking__icon {
+  position: relative;
+  top: 0;
+  right: 0;
 }
 
 .hiking h2,
@@ -39,8 +48,8 @@
 }
 
 .hiking__container {
-  background-color: rgb(172, 196, 163);
-  padding: 2em 3em;
+  background-color: rgb(175, 187, 153);
+  padding: 2em;
   margin-bottom: 2em;
 }
 
@@ -50,12 +59,22 @@
 }
 
 .hiking__details {
-  font-size: .7rem;
+  font-size: .8rem;
   margin-bottom: 1em;
 }
 
 .hiking__paragraph {
   margin-bottom: 1em;
+}
+
+.hiking__link {
+  color: rgb(47, 69, 58);
+}
+
+.hiking__link:hover,
+.hiking__link:focus {
+  color: rgb(28, 41, 35);
+  border-bottom: 1px solid rgba(28, 41, 35, .5);
 }
 
 @media (min-width: 980px) {
@@ -69,5 +88,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2em;
+    align-items: center;
+    padding: 3em;
   }
 }
