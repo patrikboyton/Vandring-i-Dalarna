@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hitta din nya favorit-vandringsled i Dalarna. Här finns leder för både nybörjare och mer erfarna vandrare.">
-	<meta name="keywords" content="vandring, dalarna, vandringsleder, friluftsliv, fjällen, vandringstips">
+    <meta name="description"
+        content="Hitta din nya favorit-vandringsled i Dalarna. Här finns leder för både nybörjare och mer erfarna vandrare.">
+    <meta name="keywords" content="vandring, dalarna, vandringsleder, friluftsliv, fjällen, vandringstips">
     <title>Vandringsleder - Vandring i Dalarna</title>
     <script src="https://kit.fontawesome.com/66c0ec6a62.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vandring.css">
 </head>
+
 <body>
     <header>
         <div class="container row">
@@ -35,61 +40,76 @@
     </header>
 
     <main>
-        <div class="hero-image__container hero-image__container--vandring" role="img" aria-label="bakgrundsbild föreställandes en kvinna på vandring tillsammans med sin hund">
+        <!-- Eftersom bakgrundsbilden nedanför laddas in via CSS så kan ett alt-atr ej användas, istället anger jag rollen 'img' med en beskrivning av bilden i aria-label -->
+        <div class="hero-image__container hero-image__container--vandring" role="img"
+            aria-label="bakgrundsbild föreställandes en kvinna på vandring tillsammans med sin hund">
             <a href="#firstSection" class="btn btn-hero"><i class="fa-solid fa-chevron-down fa-xl"></i></a>
         </div>
         <div id="firstSection" class="container">
             <nav class="secondary__nav">
                 <ul class="secondary__nav__list">
-                    <li class="secondary__nav__item"><a href="#easy" class="secondary__nav__link">Enkel vandring</a></li>
-                    <li class="secondary__nav__item"><a href="#medium" class="secondary__nav__link">Medelsvår vandring</a></li>
+                    <li class="secondary__nav__item"><a href="#easy" class="secondary__nav__link">Enkel vandring</a>
+                    </li>
+                    <li class="secondary__nav__item"><a href="#medium" class="secondary__nav__link">Medelsvår
+                            vandring</a></li>
                     <li class="secondary__nav__item"><a href="#hard" class="secondary__nav__link">Svår vandring</a></li>
                 </ul>
             </nav>
-
             <section class="hiking">
                 <h1 class="main__heading">Vandringsleder för alla</h1>
                 <div class="introduction__container">
                     <div class="introduction__text">
-                        <p class="introduction__paragraph">Dalarna erbjuder något för alla, oavsett erfarenhet eller kondition! Här hittar du ett varierat utbud av turer i olika svårighetsgrader – från enkla, natursköna promenader till medelsvåra och utmanande leder för den äventyrslystne.</p>
-                        <p class="introduction__paragraph">Upptäck Dalarnas vackra landskap med djupa skogar, glittrande sjöar och majestätiska fjäll, där varje vandring bjuder på unika naturupplevelser.</p>
-                        <p class="introduction__paragraph">Oavsett om du är nybörjare eller erfaren vandrare finns det en led som passar just dig!</p>
+                        <p class="introduction__paragraph">Dalarna erbjuder något för alla, oavsett erfarenhet eller
+                            kondition! Här hittar du ett varierat utbud av turer i olika svårighetsgrader – från enkla,
+                            natursköna promenader till medelsvåra och utmanande leder för den äventyrslystne.</p>
+                        <p class="introduction__paragraph">Upptäck Dalarnas vackra landskap med djupa skogar, glittrande
+                            sjöar och majestätiska fjäll, där varje vandring bjuder på unika naturupplevelser.</p>
+                        <p class="introduction__paragraph">Oavsett om du är nybörjare eller erfaren vandrare finns det
+                            en led som passar just dig!</p>
                     </div>
                     <div class="introduction__image">
-                        <img src="images/intro_image.webp" alt="ett uppslaget tält i fjällandskap">
+                        <img src="images/intro_image.webp"
+                            alt="ett uppslaget tält i fjällandskap samt en kvinna som gör yoga i fjällmiljö">
                     </div>
                 </div>
             </section>
-            
             <section id="easy" class="hiking">
-                <h2>Enkla vandringsleder</h2>
+                <h2 class="hiking__difficulty__heading">Enkla vandringsleder</h2>
                 <p class="hiking_difficulty__paragraph">Kortare turer med god tillgänglighet som passar nybörjare.</p>
                 <div class="hiking__container">
                     <div class="hiking__image">
                         <img src="images/male_hiker_horizontal.webp" alt="en man på vandring i fjällandskap">
                     </div>
                     <div class="hiking__text">
+                        <i class="hiking__icon fa-regular fa-bookmark"></i>
                         <h3 class="hiking__heading">Grantoppen</h3>
                         <p class="hiking__details">Distans: 4.2km - Stigning: 200m - Tidsåtgång: 2t</p>
-                        <p class="hiking__paragraph">Turen är en kortare, men ändå naturskön rutt på 4,2 km, som tar cirka 2 timmar att genomföra. Leden är måttligt utmanande och passar framförallt nybörjare. Du passerar tät barrskog och öppnare partier med vacker utsikt över omgivande dalar.</p>
+                        <p class="hiking__paragraph">Turen är en kortare, men ändå naturskön rutt på 4,2 km, som tar
+                            cirka 2 timmar att genomföra. Leden är måttligt utmanande och passar framförallt nybörjare.
+                            Du passerar tät barrskog och öppnare partier med vacker utsikt över omgivande dalar.</p>
                         <a href="#" class="hiking__link">Läs mer om Grantoppen</a>
                     </div>
                 </div>
                 <div class="hiking__container">
                     <div class="hiking__image">
-                        <img src="images/hund_fjallet.webp" alt="en hund står på en stan i fjällandskap">
+                        <img src="images/hund_fjallet.webp" alt="en hund står på en sten i fjällandskap">
                     </div>
                     <div class="hiking__text">
+                        <i class="hiking__icon fa-solid fa-bookmark"></i>
                         <h3 class="hiking__heading">Hundfjället</h3>
                         <p class="hiking__details">Distans: 6.7km - Stigning: 300m - Tidsåtgång: 3t</p>
-                        <p class="hiking__paragraph">Vid Hundfjället kan du njuta av en kortare tur än den längre och mer fysiskt krävande toppturen om du parkerar vid sommarparkeringen. Stigningen är lättare än på andra leder, men du belönas ändå med fantastiska panoramavyer från toppen. Perfekt för en lugnare dagsutflykt eller som en del av en större vandringsresa.</p>
+                        <p class="hiking__paragraph">Vid Hundfjället kan du njuta av en kortare tur än den längre och
+                            mer fysiskt krävande toppturen om du parkerar vid sommarparkeringen. Stigningen är lättare
+                            än på andra leder, men du belönas ändå med fantastiska panoramavyer från toppen. Perfekt för
+                            en lugnare dagsutflykt eller som en del av en större vandringsresa.</p>
                         <a href="#" class="hiking__link">Läs mer om Hundfjället</a>
                     </div>
                 </div>
             </section>
             <section id="medium" class="hiking">
-                <h2>Medelsvåra vandringsleder</h2>
-                <p class="hiking_difficulty__paragraph">Medellånga turer med varierande kupering. God kondition och kaffe är till din fördel.</p>
+                <h2 class="hiking__difficulty__heading">Medelsvåra vandringsleder</h2>
+                <p class="hiking_difficulty__paragraph">Medellånga turer med varierande kupering. God kondition och
+                    kaffe är till din fördel.</p>
                 <div class="hiking__container">
                     <div class="hiking__image">
                         <img src="images/storfallet.webp" alt="ett vattenfall omgivet av gröna träd och kala klippor">
@@ -98,22 +118,30 @@
                         <i class="hiking__icon fa-regular fa-bookmark"></i>
                         <h3 class="hiking__heading">Storfallet</h3>
                         <p class="hiking__details">Distans: 6.9km - Stigning: 450m - Tidsåtgång: 4t30m</p>
-                        <p class="hiking__paragraph">Vandringen till Storfallet är en naturskön tur på 6,9 km, med en stigning på 450 meter som ger en lagom utmaning. Leden tar dig genom lummiga skogar och längs porlande bäckar, där du gradvis klättrar upp mot fallet.</p>
+                        <p class="hiking__paragraph">Vandringen till Storfallet är en naturskön tur på 6,9 km, med en
+                            stigning på 450 meter som ger en lagom utmaning. Leden tar dig genom lummiga skogar och
+                            längs porlande bäckar, där du gradvis klättrar upp mot fallet.</p>
                         <a href="#" class="hiking__link">Läs mer om Storfallet runt</a>
                     </div>
                 </div>
             </section>
             <section id="hard" class="hiking">
-                <h2>Svåra vandringsleder</h2>
-                <p class="hiking_difficulty__paragraph">Långa och fysiskt krävande turer. Goda förkunskaper är ett måste.</p>
+                <h2 class="hiking__difficulty__heading">Svåra vandringsleder</h2>
+                <p class="hiking_difficulty__paragraph">Långa och fysiskt krävande turer. Goda förkunskaper är ett
+                    måste.</p>
                 <div class="hiking__container">
                     <div class="hiking__image">
                         <img src="images/view_of_dalarna_dusk.webp" alt="vy över fjällandskap i skymning">
                     </div>
                     <div class="hiking__text">
+                        <i class="hiking__icon fa-regular fa-bookmark"></i>
                         <h3 class="hiking__heading">Renfjället</h3>
                         <p class="hiking__details">Distans: 14km - Stigning: 600m - Tidsåtgång: 5t</p>
-                        <p class="hiking__paragraph">På Renfjället kan du förvänta dig en utmanande men belönande upplevelse. Med en distans på 14 km och branta stigningar krävs både uthållighet och en god fysisk kondition. Leden tar dig genom varierad terräng, där steniga partier och branta backar ger en rejäl pulsökning. Turen är perfekt för erfarna vandrare som söker en fysisk utmaning och en storslagen naturupplevelse.</p>
+                        <p class="hiking__paragraph">På Renfjället kan du förvänta dig en utmanande men belönande
+                            upplevelse. Med en distans på 14 km och branta stigningar krävs både uthållighet och en god
+                            fysisk kondition. Leden tar dig genom varierad terräng, där steniga partier och branta
+                            backar ger en rejäl pulsökning. Turen är perfekt för erfarna vandrare som söker en fysisk
+                            utmaning och en storslagen naturupplevelse.</p>
                         <a href="#" class="hiking__link">Läs mer om Renfjället</a>
                     </div>
                 </div>
@@ -122,10 +150,13 @@
                         <img src="images/hund_fjallet_2.webp" alt="en hund sitter i fjällandskap">
                     </div>
                     <div class="hiking__text">
-                        <i class="hiking__icon fa-regular fa-bookmark"></i>
+                        <i class="hiking__icon fa-solid fa-bookmark"></i>
                         <h3 class="hiking__heading">Hundfjällets topptur</h3>
                         <p class="hiking__details">Distans: 18.9km - Stigning: 650m - Tidsåtgång: 6t30m</p>
-                        <p class="hiking__paragraph">Toppturen till Hundfjället är en krävande och utmanande led på 18,9 km, perfekt för erfarna vandrare som söker en intensiv dagsutflykt. Belöningen för ansträngningen är vidsträckta panoramavyer över omgivande fjälltoppar och dalar, samt en känsla av att ha övervunnit en riktigt tuff utmaning.</p>
+                        <p class="hiking__paragraph">Toppturen till Hundfjället är en krävande och utmanande led på 18,9
+                            km, perfekt för erfarna vandrare som söker en intensiv dagsutflykt. Belöningen för
+                            ansträngningen är vidsträckta panoramavyer över omgivande fjälltoppar och dalar, samt en
+                            känsla av att ha övervunnit en riktigt tuff utmaning.</p>
                         <a href="#" class="hiking__link">Läs mer om Hundfjällets topptur</a>
                     </div>
                 </div>
@@ -136,10 +167,14 @@
         <div class="container">
             <div class="social-media__container">
                 <ul class="social-media__list">
-                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i class="fa-solid fa-envelope fa-2xl"></i></a></li>
-                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i class="fa-solid fa-phone fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-solid fa-envelope fa-2xl"></i></a></li>
+                    <li class="social-media__item"><a href="#" class="social-media__link footer__link"><i
+                                class="fa-solid fa-phone fa-2xl"></i></a></li>
                 </ul>
             </div>
             <nav class="footer-nav">
@@ -160,4 +195,5 @@
 
     <!-- Vissa av texterna på denna sidan har skrivits med AI-verktyg från OpenAI -->
 </body>
+
 </html>

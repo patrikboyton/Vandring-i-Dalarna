@@ -1,16 +1,17 @@
-/* CSS custom properties */
+/* CSS custom properties - color palette*/
 :root {
     --clr-light: #efefef;
-    --clr-timberwolf: rgb(218, 215, 205);
-    --clr-sage: rgb(163, 177, 138);
-    --clr-fern-green: rgb(78, 117, 77);
-    --clr-hunter-green: rgb(58, 90, 64);
-    --clr-brunswick-green: rgb(46, 69, 58);
-    --padding: 5em;
+    --clr-timberwolf: #dad7cd;
+    --clr-sage: #a3b18a;
+    --clr-fern-green: #4e754d;
+    --clr-hunter-green: #3a5a40;
+    --clr-brunswick-green: #2e453a;
 }
 
 /* Global settings */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -73,13 +74,10 @@ footer {
     background-color: var(--clr-hunter-green);
 }
 
-
 /* Styles related to header section and navigation bar */
-
-
 .logo {
     display: flex;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 /* Navigation is hidden in mobile mode until you click the menu icon */
@@ -87,7 +85,6 @@ footer {
     text-align: center;
     visibility: hidden;
     height: 0;
-
 }
 
 .nav--visible {
@@ -183,7 +180,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: var(--padding);
+    margin-bottom: 5em;
 }
 
 .hero-image__container--vandring {
@@ -221,8 +218,8 @@ footer {
     padding: 3em;
 }
 
-.main-features + .main-features {
-    margin-top: 4em;
+.main-feature__container + .main-feature__container {
+    padding-top: 0;
 }
 
 .main-feature__heading {
@@ -281,7 +278,15 @@ footer {
 
 /* Media queries for responsive modes */
 @media (min-width: 700px) {
-    
+    .mini-features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mini-feature__container {
+        max-width: 500px;
+    }
 }
 
 @media (min-width: 980px) {
@@ -317,7 +322,7 @@ footer {
         visibility: hidden;
         height: 0;
     }
-    
+
     .mini-features {
         display: grid;
         gap: 2em;

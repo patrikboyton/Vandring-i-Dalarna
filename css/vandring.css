@@ -1,94 +1,86 @@
+/* Additional CSS for vandring.html */
 
-
+/* Styles related to the small secondary navigation */
 .secondary__nav {
-  margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 .secondary__nav__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.5em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
 }
 
 .secondary__nav__link {
-  color: black;
-  font-size: 1.2rem;
-  transition:  100ms ease-in;
+    color: black;
+    font-size: 1.2rem;
+    transition: 100ms ease-in;
 }
 
 .secondary__nav__link:hover,
 .secondary__nav__link:focus {
-  color: rgb(46, 69, 58);
-  border-bottom: 1px solid rgb(46, 69, 58);
+    color: rgb(46, 69, 58);
+    border-bottom: 1px solid rgb(46, 69, 58);
 }
 
+/* Styles related to the main content of vandring.html */
 .introduction__paragraph {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
-/*.introduction__image {
-  max-height: 300px;
-  overflow: hidden;
-}*/ 
-
-.hiking__icon {
-  position: relative;
-  top: 0;
-  right: 0;
-}
-
-.hiking h2,
+.hiking__difficulty__heading,
 .hiking_difficulty__paragraph {
-  text-align: center;
+    text-align: center;
 }
 
 .hiking_difficulty__paragraph {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .hiking__container {
-  background-color: rgb(175, 187, 153);
-  padding: 2em;
-  margin-bottom: 2em;
+    background-color: rgb(175, 187, 153);
+    padding: 2em;
+    margin-bottom: 2em;
 }
 
 .introduction__container:last-of-type,
 .hiking__container:last-of-type {
-  margin-bottom: 5em;
+    margin-bottom: 5em;
 }
 
 .hiking__details {
-  font-size: .8rem;
-  margin-bottom: 1em;
+    font-size: .8rem;
+    margin-bottom: 1em;
 }
 
 .hiking__paragraph {
-  margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 .hiking__link {
-  color: rgb(47, 69, 58);
+    color: rgb(47, 69, 58);
 }
 
 .hiking__link:hover,
 .hiking__link:focus {
-  color: rgb(28, 41, 35);
-  border-bottom: 1px solid rgba(28, 41, 35, .5);
+    color: rgb(28, 41, 35);
+    border-bottom: 1px solid rgba(28, 41, 35, .5);
 }
 
+/* Media queries for responsive modes */
 @media (min-width: 980px) {
-  .introduction__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
-  }
+    .introduction__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
 
-  .hiking__container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2em;
-    align-items: center;
-    padding: 3em;
-  }
+    .hiking__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 2em;
+        align-items: center;
+        padding: 3em;
+    }
 }
